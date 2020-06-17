@@ -79,9 +79,7 @@ namespace BackNexos.API.Data
 
         public void ActualizarPaciente(int id, PacienteParaActualizarDto pacienteParaActializarDto)
         {
-            //var pacienteActual = await _context.Pacientes.FirstOrDefaultAsync(p => p.IdPaciente == id);
-            //_context.Entry(await _context.Pacientes.FirstOrDefaultAsync(p => p.IdPaciente == id)).CurrentValues.SetValues(pacienteParaActializarDto);
-            //return (await _context.SaveChangesAsync()) > 0;
+            throw new System.NotImplementedException();
         }
     }
 }

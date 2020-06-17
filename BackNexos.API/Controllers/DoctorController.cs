@@ -34,7 +34,7 @@ namespace BackNexos.API.Controllers
 
             var doctorReturn = await _controlInfo.RegistrarDoctor(doctor);
             return Ok(doctorReturn);
-            //return CreatedAtRoute("GetDoctor", new {Controller = "Doctores", id = doctorReturn.IdDoctor}, doctorReturn);
+            
         }
 
         [AllowAnonymous]

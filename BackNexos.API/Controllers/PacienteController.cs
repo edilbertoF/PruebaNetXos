@@ -35,7 +35,7 @@ namespace BackNexos.API.Controllers
 
             var pacienteReturn = await _controlInfo.RegistrarPaciente(paciente);
             return Ok(pacienteReturn);
-            //return CreatedAtRoute("GetDoctor", new {Controller = "Doctores", id = doctorReturn.IdDoctor}, doctorReturn);
+            
         }
 
         [AllowAnonymous]
@@ -54,15 +54,6 @@ namespace BackNexos.API.Controllers
 
             return Ok(result); 
 
-            /*var result = _context.Pacientes.Where(p => p.IdPaciente == id)            
-                            .Include(x => x.RelacionPacienteDoctor)
-                            .ThenInclude(x => x.Doctor).AsQueryable();            
-            return Ok(result); 
-
-            var result = _context.relacionPacienteDoctor.Where(x => x.PacienteId == id)
-                            .Include(x => x.Paciente).Include(x => x.Doctor);
-
-            return Ok(result);     */           
         }
 
         [HttpPut("ActualizarPaciente/{id:int}")]
